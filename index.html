@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试界面</title>
+</head>
+
+<body>
+    <img id="photo" src="https://file.edudc.net/4a6b95683c2f3f02e8816717dcc3285b.jpeg">
+    <img id="photo2" src="https://file.edudc.net/348de69e230574b3f5b0835336ebb454.png?x-oss-process=image/resize,w_600">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://www.layuicdn.com/layer/layer.js"></script>
+    <script src="common.js"></script>
+    <script>
+        // $("#photo").click(function () {
+        //     layer.open({
+        //         type: 1,
+        //         title: false,
+        //         closeBtn: 0,
+        //         area: ['auto'],
+        //         skin: 'layui-layer-nobg', //没有背景色
+        //         shadeClose: true,
+        //         content: $("#photo")
+        //     });
+        // })
+        $("img").click(function(){
+            var photo = $(this);
+            $.bigPhoto(photo);
+        })
+
+    </script>
+</body>
+
+</html>
